@@ -1,0 +1,101 @@
+@import "https://fonts.googleapis.com/css?family=Inconsolata";
+@import "https://fonts.googleapis.com/css?family=Kalam";
+
+:root {
+  --color: #888;
+  --button-size: 60px;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  font-family: Inconsolata, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(39, 39, 39);
+}
+
+body {
+  font-size: 2.5rem;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+}
+#calculator {
+  border: 4px solid black;
+}
+#buttons {
+  display: grid;
+  grid-template: repeat(5, 20%) / repeat(4, 25%);
+}
+
+.button {
+  color: #ddd;
+  background-color: rgb(88, 86, 86);
+  min-width: var(--button-size);
+  min-height: var(--button-size);
+  user-select: none;
+
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #222;
+
+  &:hover {
+    cursor: default;
+    color: #222;
+    border: 1px solid #aaa;
+    transform: scale(1.02);
+  }
+  &:active {
+    cursor: default;
+    color: black;
+    border: 1px solid #999;
+    transform: scale(0.99);
+  }
+}
+.selected {
+  color: black;
+  border: 1px solid #999;
+  transform: scale(0.99);
+}
+#clear {
+  grid-column: 1/3;
+  background-color: rgb(196, 101, 0);
+}
+#equals {
+  grid-row: 4/6;
+  grid-column: -1/-2;
+  background-color: rgb(24, 60, 144);
+}
+#zero {
+  grid-column: 1/3;
+}
+#divide,
+#multiply,
+#subtract,
+#add {
+  background-color: #aaa;
+}
+#display {
+  font-family: Kalam;
+  background-color: black;
+  color: white;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  * {
+    margin-left: auto;
+  }
+}

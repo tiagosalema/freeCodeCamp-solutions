@@ -1,0 +1,93 @@
+@import "https://fonts.googleapis.com/css?family=Inconsolata";
+
+:root {
+  --color: #888;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  transition: all 1s;
+  font-family: Inconsolata, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(29, 128, 85);
+  align-items: center;
+  width: 100%;
+}
+
+#drum-machine {
+  width: 300px;
+}
+
+.drum-pad {
+  background-color: rgb(221, 137, 137);
+  margin: 10px;
+  cursor: pointer;
+  font-size: 3rem;
+  flex: 1 0 20%;
+  height: 110%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 3px 2px 2px rgba(0, 0, 0, 0.6);
+  transition: all 0.1s;
+
+  &:active {
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.6);
+    background-color: rgb(191, 114, 114);
+    box-shadow: none;
+    transform: translate(3px, 3px);
+  }
+
+  span {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+}
+
+#drum-machine {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-content: stretch;
+  #dummie {
+    flex: 1;
+  }
+  #keys {
+    display: inline-block;
+    flex-wrap: wrap;
+    width: 50wh;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+  #display {
+    flex: 1;
+    font-size: 4rem;
+    padding: 15px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.mystyle {
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.6);
+  background-color: rgb(191, 114, 114);
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}

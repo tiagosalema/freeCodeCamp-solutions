@@ -1,0 +1,88 @@
+@import "https://fonts.googleapis.com/css?family=Inconsolata";
+@import "https://fonts.googleapis.com/css?family=Domine";
+
+@import "https://fonts.googleapis.com/css?family=Gloria+Hallelujah";
+@import "https://fonts.googleapis.com/css?family=Gloria+Hallelujah";
+@import "https://fonts.googleapis.com/css?family=Gloria+Hallelujah";
+
+:root {
+  --color: black;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  transition: all 1s;
+  padding: 0;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+}
+
+#quote-box {
+  border-radius: 3px;
+  padding: 80px 50px 110px 50px;
+  max-height: 100%;
+  width: 600px;
+  background-color: #fff;
+  color: var(--color);
+  font-family: Inconsolata, sans-serif;
+  font-size: 30px;
+  position: relative;
+  -moz-box-shadow: 15px 16px 9px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 15px 16px 9px 0px rgba(0, 0, 0, 0.4);
+}
+.icon {
+  font-size: 35px;
+  display: block;
+  color: var(--color);
+  display: inline;
+  position: absolute;
+  bottom: 35px;
+}
+#text {
+  color: var(--color);
+  font-size: 50px;
+  text-align: center;
+}
+
+#author {
+  color: var(--color);
+  font-size: 20px;
+  text-align: right;
+  margin-top: 20px;
+}
+
+#new-quote {
+  border-radius: 3px;
+  background-color: var(--color);
+  border: none;
+  color: white;
+  position: absolute;
+  right: 25px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  bottom: 25px;
+}
+
+#new-quote:hover {
+  border: none;
+  background-color: var(--color);
+  color: white;
+  border: none;
+}
+
+body {
+  background-color: var(--color);
+}
