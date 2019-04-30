@@ -75,9 +75,9 @@ class Button extends React.Component {
   onKeyPressed = key => {
     if (key.key.toUpperCase() === this.props.keyTrigger) {
       const x = document.getElementById(key.key.toUpperCase()).parentElement;
-      x.classList.add("mystyle");
+      x.classList.add("clicked");
       x.click();
-      setTimeout(() => x.classList.remove("mystyle"), 200);
+      setTimeout(() => x.classList.remove("clicked"), 100);
     }
   };
 
