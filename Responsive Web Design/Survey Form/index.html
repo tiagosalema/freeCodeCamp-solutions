@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <h1 id="title">Tell us a bit about you...</h1>
+    <div id="container">
+      <p id="description">
+        It is really important for us to get to know you better so that we can improve the
+        quality of our website. That said, we would very much appreciate if you could
+        spend 2 minutes of your time filling in this small form.
+      </p>
+      <form id="survey-form">
+        <!--  -->
+        <section id="basicInfo">
+          <label id="name-label" class="left" for="firstName" class="first-name"
+            >Name:</label
+          >
+          <input
+            id="name"
+            class="right"
+            placeholder="Write your text"
+            type="text"
+            required
+          />
+          <label id="email-label" class="left" for="firstName" class="first-name"
+            >Email:</label
+          >
+          <input
+            id="email"
+            class="right"
+            placeholder="Write your email"
+            type="email"
+            required
+          />
+          <label id="number-label" class="left" for="firstName" class="first-name"
+            >Age:</label
+          >
+          <input
+            id="number"
+            class="right"
+            placeholder="Pick a number"
+            type="number"
+            min="0"
+            max="200"
+            required
+          />
+        </section>
+
+        <section id="checkbox">
+          <div class="left">
+            <span>What are your favourite languages?</span>
+          </div>
+          <div class="right">
+            <ul>
+              <li class="checkbox">
+                <label><input type="checkbox" value="js" />Javascript</label>
+              </li>
+              <li class="checkbox">
+                <label><input type="checkbox" value="node" />Node</label>
+              </li>
+              <li class="checkbox">
+                <label> <input value="sql" type="checkbox" />SQL</label>
+              </li>
+              <li class="checkbox">
+                <label><input type="checkbox" value="java" />Java</label>
+              </li>
+              <li class="checkbox">
+                <label><input type="checkbox" value="cpp" />C++</label>
+              </li>
+              <li class="checkbox">
+                <label><input type="checkbox" value="cs" />C#</label>
+              </li>
+              <li class="checkbox">
+                <label><input type="checkbox" value="python" />Python</label>
+              </li>
+              <li class="checkbox">
+                <label><input type="checkbox" value="php" />PHP</label>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="dropdown">
+          <div class="left">
+            <span>How many of the list do you know?</span>
+          </div>
+          <div class="right">
+            <select>
+              <option>None of them</option>
+              <option>Between 1 and 3</option>
+              <option>Between 4 and 6</option>
+              <option>All of them</option>
+            </select>
+          </div>
+        </section>
+
+        <section id="radio">
+          <div class="left"><span>Would you like to learn more?</span></div>
+          <div class="right">
+            <input type="radio" name="action" id="track" value="track" />
+            <label for="track">Sure.</label>
+            <input type="radio" name="action" id="event" value="event" />
+            <label for="event">Goddam no!</label>
+          </div>
+        </section>
+
+        <section id="textarea">
+          <div class="left">
+            <span>Why are you even answering this survey? 💩</span>
+          </div>
+          <div class="right"><textarea placeholder="Well..."></textarea></div>
+        </section>
+
+        <section>
+          <button id="submit">Submit</button>
+        </section>
+      </form>
+    </div>
+  </body>
+</html>

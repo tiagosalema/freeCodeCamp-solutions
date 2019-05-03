@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+* {
+  font-family: Open Sans, sans-serif;
+  line-height: 1.5;
+  color: #315f58; }
+
+body {
+  background-color: #a9d7d1;
+  text-align: center; }
+
+section {
+  margin: 10px 0; }
+
+#container {
+  background-color: #f7f7f7;
+  width: 50%;
+  margin: 30px auto;
+  border-radius: 3px;
+  padding: 20px 60px;
+  height: 55rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6); }
+
+#description {
+  margin-top: 20px;
+  margin-bottom: 50px; }
+
+.right {
+  display: inline-block;
+  text-align: left;
+  width: 40%; }
+
+.left {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 8px 15px;
+  vertical-align: top; }
+  .left span,
+  .left label {
+    margin-right: 13px; }
+
+#basicInfo input {
+  border-radius: 2px;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+  margin: 3px 0;
+  margin-left: 11px;
+  width: 40%; }
+  #basicInfo input:focus {
+    outline: 3px solid gold; }
+
+#checkbox .left {
+  margin-top: 8px; }
+
+#checkbox ul {
+  border: none;
+  float: left;
+  display: block;
+  block-size: content;
+  padding: 0;
+  list-style: none; }
+
+#checkbox li label input {
+  margin: 6px 15px 0 0; }
+
+#dropdown .left {
+  margin-top: -8px; }
+
+#dropdown .right select {
+  width: calc(100% + 2 * 5px);
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #c0c0c0;
+  border: option;
+    border-text-align: center; }
+
+#radio input {
+  margin: 15px 0; }
+  #radio input:not(:first-child) {
+    margin-left: 40px; }
+
+#radio label {
+  margin-left: 15px; }
+
+#textarea .left span {
+  display: inline-block; }
+
+#textarea textarea {
+  width: calc(100% - 13px);
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #c0c0c0; }
+
+#submit {
+  font-size: 1.5rem;
+  margin-top: 50px;
+  color: #315f58;
+  padding: 5px 45px;
+  border-radius: 3px;
+  background-color: #a9d7d1;
+  border: solid 1px #315f58;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); }
+  #submit:hover {
+    background-color: #bde2dd; }
+  #submit:active {
+    box-shadow: none;
+    transform: translate(1px, 1px); }
